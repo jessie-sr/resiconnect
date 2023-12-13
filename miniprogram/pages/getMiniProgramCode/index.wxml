@@ -1,0 +1,70 @@
+ <!--index.wxml-->
+ <view class="container">
+    <form bindsubmit="submit">
+
+      <view>
+        <text>1. 姓名:</text>
+        <input name="name" value="" />
+      </view>
+
+      <view>
+        <text>2. 当天所在位置: </text>
+        <radio-group name="location">
+          <label><radio value="0" />在沪</label>
+          <label><radio value="1" />离沪</label>
+       </radio-group>
+     </view>
+
+     <view>
+        <text>2.1. 如果离沪请报告你的位置（具体到省市区）: </text>
+        <input name="location" value="" />
+      </view>
+
+      <view>
+        <text>3. 今日体温: </text>
+        <input name="temperature" value="" />
+      </view>
+
+     <view>
+       <text>4. 健康状况: 是否有发热、头痛、咳嗽、胸闷、乏力等症状？</text>
+       <checkbox-group name="symptoms">
+         <label><checkbox value="发热" />发热</label>
+         <label><checkbox value="头痛" />头痛</label>
+         <label><checkbox value="咳嗽" />咳嗽</label>
+         <label><checkbox value="胸闷" />胸闷</label>
+         <label><checkbox value="乏力" />乏力</label>
+       </checkbox-group>
+     </view>
+
+     <view>
+       <text>5. 同住人健康状况: 是否有发热、头痛、咳嗽、胸闷、乏力等症状？</text>
+       <checkbox-group name="housemate-symptoms">
+         <label><checkbox value="发热" />发热</label>
+         <label><checkbox value="头痛" />头痛</label>
+         <label><checkbox value="咳嗽" />咳嗽</label>
+         <label><checkbox value="胸闷" />胸闷</label>
+         <label><checkbox value="乏力" />乏力</label>
+       </checkbox-group>
+     </view>
+
+     <view>
+        <text>6. 该住户及同住人是否接触过过去两周内有中高风险地区旅居史人员？ </text>
+        <radio-group name="contact">
+          <label><radio value="0" />无相关接触</label>
+          <label><radio value="1" />有相关接触</label>
+       </radio-group>
+     </view>
+
+     <view>
+       <text>6.1. 若有，请详细说明情况</text>
+       <textarea name="opinion" value="" />
+     </view>
+
+     <view>
+       <text>7. 其他意见：</text>
+       <textarea name="opinion" value="" />
+     </view>
+     
+     <button form-type="submit">提交</button>
+   </form>
+</view>

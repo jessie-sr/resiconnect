@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "本人健康信息填报",
+  "usingComponents": {
+    "cloud-tip-modal": "/components/cloudTipModal/index"
+  }
+}

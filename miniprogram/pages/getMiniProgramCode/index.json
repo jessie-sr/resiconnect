@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "代替他人健康填报",
+  "usingComponents": {
+    "cloud-tip-modal": "/components/cloudTipModal/index"
+  }
+}

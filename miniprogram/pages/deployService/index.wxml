@@ -1,0 +1,261 @@
+<!--miniprogram/pages/deployService/index.wxml-->
+<view class="subcontainer">
+  <text>亲爱的居民朋友：
+
+  您好！
+
+    欢迎您参与此次问卷调查！面对新冠疫情，我们都会出现不同程度的担心、恐惧、甚至一些较为严重的身心反应。为守护您的身心健康，紫藤社区居委会特地设计了一份心理健康状况自查表，以了解您近来的心理健康及情绪状况。若有必要，我们会与您联系，以及时提供专业的心理援助。此外，问卷不会用作它途，您可以根据自己的实际情况放心作答。
+
+    紫藤社区居委会
+  </text>
+</view>
+
+<view class="container">
+    <form bindsubmit="submit">
+      <view>
+        <text>1. 您的性别:</text>
+        <radio-group name="gender">
+          <label><radio value="0" />男</label>
+          <label><radio value="1" />女</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>2. 您的年龄段: </text>
+        <radio-group name="age">
+          <label><radio value="0" />18岁以下</label>
+          <label><radio value="1" />18-25</label>
+          <label><radio value="2" />26-30</label>
+          <label><radio value="3" />31-40</label>
+          <label><radio value="4" />41-50</label>
+          <label><radio value="5" />51-60</label>
+          <label><radio value="5" />60以上</label>
+        </radio-group>
+      </view>
+     
+      <view>
+        <text>3. 您的文化程度: </text>
+        <radio-group name="education">
+          <label><radio value="0" />小学</label>
+          <label><radio value="1" />初中</label>
+          <label><radio value="2" />高中</label>
+          <label><radio value="3" />大学</label>
+          <label><radio value="4" />硕士及以上</label>
+          <label><radio value="5" />其他</label>
+       </radio-group>
+     </view>
+
+     <view>
+        <text>4. 您的婚姻状况: </text>
+        <radio-group name="marriage">
+          <label><radio value="0" />未婚</label>
+          <label><radio value="1" />已婚</label>
+          <label><radio value="2" />离异</label>
+          <label><radio value="3" />丧偶</label>
+          <label><radio value="4" />再婚</label>
+          <label><radio value="5" />其他</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>5. 受新冠肺炎影响: </text>
+        <checkbox-group name="symptoms">
+         <label><checkbox value="确诊" />确诊</label>
+         <label><checkbox value="医学观察中" />医学观察中</label>
+         <label><checkbox value="参与抗疫工作" />参与抗疫工作</label>
+         <label><checkbox value="工作生活受限" />工作生活受限</label>
+         <label><checkbox value="正常生活" />正常生活</label>
+         <label><checkbox value="其他" />其他</label>
+       </checkbox-group>
+      </view>
+
+      <view>
+        <text>6. 目前所在地: </text>
+        <input name="location" value="" />
+      </view>
+
+      <view>
+        <text>7. 您的联系方式: </text>
+        <input name="contact-info" placeholder="如果方便，请留下您的联系方式，以便我们回访" />
+      </view>
+
+      <view>
+        <text>8. 您每天关注新冠疫情相关信息的时长大约是: </text>
+        <radio-group name="attention">
+          <label><radio value="0" />不关注</label>
+          <label><radio value="1" />少于30分钟</label>
+          <label><radio value="2" />30-60分钟</label>
+          <label><radio value="3" />1-2小时</label>
+          <label><radio value="4" />2小时以上</label>
+       </radio-group>
+      </view>
+      
+        <text>
+        以下部分问题来自世界卫生组织心理健康自评问卷（SRQ-20）
+        
+        </text>
+
+      <view>
+        <text>1. 您的是否经常头痛?</text>
+        <radio-group name="headache">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>2. 您的是否食欲差?</text>
+        <radio-group name="appetite">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>3. 您的是否睡眠差?</text>
+        <radio-group name="sleep">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>4. 您的是否易受惊吓?</text>
+        <radio-group name="shock">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>5. 您的是否手抖?</text>
+        <radio-group name="trembling-hands">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>6. 您的是否感到不安、紧张或担忧?</text>
+        <radio-group name="worried">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>7. 您的是否感到不安、紧张或担忧?</text>
+        <radio-group name="digest">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>8. 您的是否思维不清晰?</text>
+        <radio-group name="thinking">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>9. 您的是否感觉不快?</text>
+        <radio-group name="unhappy">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>10. 您的是否比原来哭得多?</text>
+        <radio-group name="cry">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>11. 您的是否发现很难从日常活动中得到乐趣?</text>
+        <radio-group name="daily-joy">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>12. 您的是否发现自己很难做决定?</text>
+        <radio-group name="decision">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>13. 日常生活是否令你感到痛苦?</text>
+        <radio-group name="dailylife">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>14. 您在生活中是否无法起到响应的作用?</text>
+        <radio-group name="response">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>15. 您是否丧失了对事物的兴趣?</text>
+        <radio-group name="lost-interest">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>16. 您是否感到自己是个无价值的人?</text>
+        <radio-group name="valueless">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>17. 您头脑中是否出现过结束自己生命的想法?</text>
+        <radio-group name="end-life">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>18. 您是否什么时候都感到累?</text>
+        <radio-group name="always-tired">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>19. 您是否感到胃部不适?</text>
+        <radio-group name="stomache">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+      <view>
+        <text>20. 您是否容易疲劳?</text>
+        <radio-group name="easily-tired">
+          <label><radio value="0" />是</label>
+          <label><radio value="1" />否</label>
+       </radio-group>
+      </view>
+
+     <button form-type="submit">提交</button>
+   </form>
+</view>
+

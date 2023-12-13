@@ -1,0 +1,29 @@
+/**index.wxss**/
+ .container {
+     margin: 30rpx;
+     padding: 30rpx;
+     font-family: PingFang SC;
+     font-weight: 400;
+     color: #000000;
+     font-size: 30rpx;
+     margin-bottom: 40rpx;
+   }
+   view{
+     margin-bottom: 30rpx;
+   }
+   input{
+   width: 600rpx;
+   margin-top: 10rpx;
+   border-bottom: 2rpx solid #ccc;
+ }
+ label{
+   display: block;
+   margin: 8rpx;
+ }
+ textarea{
+   width: 600rpx;
+   height: 100rpx;
+   margin-top: 10rpx;
+   border: 2rpx solid #eee;
+   background-color: white;
+ }
